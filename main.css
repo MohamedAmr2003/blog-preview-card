@@ -15,7 +15,7 @@ font-family: 'Poppins', sans-serif;
 }
 
 .box{
-    margin: 100px auto;
+    margin: 150px auto;
     background-color: var(--White);
     width: 400px;
     display: flex;
@@ -87,6 +87,6 @@ footer p{
 @media screen and (max-width: 767px){
     .box{
         width: 340px;
-        margin: 80px 15px;
+        margin: 80px 7px;
     }
 }
