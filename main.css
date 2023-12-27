@@ -1,0 +1,92 @@
+:root{
+    --main-c:hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 7%);
+    --pfs:16px;
+
+}
+
+
+body{
+background-color: var(--main-c);
+font-family: 'Figtree', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+
+.box{
+    margin: 100px auto;
+    background-color: var(--White);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 620px;
+    border: 1px solid var(--black );
+    box-shadow: 14px 11px 0px var(--black);
+    border-radius: 10px;
+    .image img{
+        margin: 20px;
+        border-radius: 10px;
+    }
+    .text{
+    margin: 20px;   
+
+    && span{
+        display: block;
+        margin: 20px;
+    }
+    .y{
+        background-color: var(--main-c);
+        text-transform: capitalize;
+        width: 100px;
+        text-align: center;
+        height: 35px;
+        line-height: 2;
+        border-radius: 6px;
+    }
+
+
+    && p{
+        font-size: var(--pfs);
+        opacity: 50%;
+
+    }
+    }
+        
+}
+
+.text span:last-of-type{
+    font-size: var(--pfs);
+    color: var(--black);
+    opacity: 90%;
+    text-wrap: balance;
+}
+
+footer img{
+    border-radius: 50%;
+    height: 70px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+footer p{
+    margin-left: 30px;
+}
+
+.text h2:hover{
+    color: var(--main-c);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 767px){
+    .box{
+        width: 340px;
+        margin: 80px 15px;
+    }
+}
